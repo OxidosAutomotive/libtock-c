@@ -1,6 +1,6 @@
 #pragma once
 
-#include <libtock/crypto/syscalls/hmac_syscalls.h>
+#include <libtock/crypto/syscalls/hkdf_syscalls.h>
 #include <libtock/tock.h>
 
 #ifdef __cplusplus

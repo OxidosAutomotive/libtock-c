@@ -18,8 +18,6 @@ returncode_t libtock_hash_set_readwrite_allow_output_buffer(uint8_t* buffer, uin
 
 returncode_t libtock_hash_command_start(uint8_t algo);
 
-returncode_t libtocksync_hash_yield_wait_for_done(void);
-
 #ifdef __cplusplus
 }
 #endif

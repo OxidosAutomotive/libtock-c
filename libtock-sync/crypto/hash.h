@@ -1,6 +1,8 @@
 #include <libtock/crypto/hash_types.h>
 #include <libtock/tock.h>
 
+#include "syscalls/hash_syscalls.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif

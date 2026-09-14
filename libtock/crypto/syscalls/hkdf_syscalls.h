@@ -23,8 +23,6 @@ returncode_t libtock_hkdf_set_readwrite_allow_okm_buffer(uint8_t* buffer, uint32
 
 returncode_t libtock_hkdf_command_start(uint8_t algo);
 
-returncode_t libtocksync_hkdf_yield_wait_for_done(void);
-
 #ifdef __cplusplus
 }
 #endif
