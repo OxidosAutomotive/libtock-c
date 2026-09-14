@@ -1,10 +1,11 @@
 #include "hmac.h"
+
 #include "syscalls/hmac_syscalls.h"
 
 
 static void hmac_upcall(int status,
-                       __attribute__ ((unused)) int unused1,
-                       __attribute__ ((unused)) int unused2, void* opaque) {
+                        __attribute__ ((unused)) int unused1,
+                        __attribute__ ((unused)) int unused2, void* opaque) {
   libtock_hmac_callback_done cb = (libtock_hmac_callback_done) opaque;
   cb(tock_status_to_returncode(status));
 }
@@ -15,10 +16,10 @@ bool libtock_hmac_exists(void) {
 
 
 returncode_t libtock_hmac_compute(libtock_hash_algorithm_t hmac_algorithm,
-                                        uint8_t *key_buffer, uint32_t key_length,
-                                        uint8_t *input_buffer, uint32_t input_length,
-                                        uint8_t *output_buffer, uint32_t output_length,
-                                        libtock_hmac_callback_done cb) {
+                                  uint8_t* key_buffer, uint32_t key_length,
+                                  uint8_t* input_buffer, uint32_t input_length,
+                                  uint8_t* output_buffer, uint32_t output_length,
+                                  libtock_hmac_callback_done cb) {
 
   returncode_t ret;
 

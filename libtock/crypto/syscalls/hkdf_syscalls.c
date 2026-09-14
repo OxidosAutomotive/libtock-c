@@ -20,19 +20,19 @@ returncode_t libtock_hkdf_set_done_upcall(subscribe_upcall callback, void* opaqu
   return tock_subscribe_return_to_returncode(sval);
 }
 
-returncode_t libtock_hkdf_set_readonly_allow_ikm_buffer(uint8_t *buffer, uint32_t len) {
-    allow_ro_return_t aval = allow_readonly(DRIVER_NUM_HKDF, TOCK_HKDF_IKM_BUF, (void*) buffer, len);
-    return tock_allow_ro_return_to_returncode(aval);
+returncode_t libtock_hkdf_set_readonly_allow_ikm_buffer(uint8_t* buffer, uint32_t len) {
+  allow_ro_return_t aval = allow_readonly(DRIVER_NUM_HKDF, TOCK_HKDF_IKM_BUF, (void*) buffer, len);
+  return tock_allow_ro_return_to_returncode(aval);
 }
 
-returncode_t libtock_hkdf_set_readonly_allow_salt_buffer(uint8_t *buffer, uint32_t len) {
-    allow_ro_return_t aval = allow_readonly(DRIVER_NUM_HKDF, TOCK_HKDF_SALT_BUF, (void*) buffer, len);
-    return tock_allow_ro_return_to_returncode(aval);
+returncode_t libtock_hkdf_set_readonly_allow_salt_buffer(uint8_t* buffer, uint32_t len) {
+  allow_ro_return_t aval = allow_readonly(DRIVER_NUM_HKDF, TOCK_HKDF_SALT_BUF, (void*) buffer, len);
+  return tock_allow_ro_return_to_returncode(aval);
 }
 
-returncode_t libtock_hkdf_set_readonly_allow_info_buffer(uint8_t *buffer, uint32_t len) {
-    allow_ro_return_t aval = allow_readonly(DRIVER_NUM_HKDF, TOCK_HKDF_INFO_BUF, (void*) buffer, len);
-    return tock_allow_ro_return_to_returncode(aval);
+returncode_t libtock_hkdf_set_readonly_allow_info_buffer(uint8_t* buffer, uint32_t len) {
+  allow_ro_return_t aval = allow_readonly(DRIVER_NUM_HKDF, TOCK_HKDF_INFO_BUF, (void*) buffer, len);
+  return tock_allow_ro_return_to_returncode(aval);
 }
 
 returncode_t libtock_hkdf_set_readwrite_allow_prk_buffer(uint8_t* buffer, uint32_t len) {

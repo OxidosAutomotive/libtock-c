@@ -5,9 +5,9 @@ bool libtocksync_hmac_exists(void) {
 }
 
 returncode_t libtocksync_hmac_compute(libtock_hash_algorithm_t hmac_algorithm,
-                                        uint8_t *key_buffer, uint32_t key_length,
-                                        uint8_t *input_buffer, uint32_t input_length,
-                                        uint8_t *output_buffer, uint32_t output_length) {
+                                      uint8_t* key_buffer, uint32_t key_length,
+                                      uint8_t* input_buffer, uint32_t input_length,
+                                      uint8_t* output_buffer, uint32_t output_length) {
 
   returncode_t ret;
 
@@ -23,7 +23,7 @@ returncode_t libtocksync_hmac_compute(libtock_hash_algorithm_t hmac_algorithm,
   ret = libtock_hmac_command_start(hmac_algorithm);
 
   if (ret == RETURNCODE_SUCCESS) {
-      ret = libtocksync_hmac_yield_wait_for_done();
+    ret = libtocksync_hmac_yield_wait_for_done();
   }
 
   return ret;
