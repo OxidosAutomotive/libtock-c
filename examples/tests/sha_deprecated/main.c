@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <libtock-sync/crypto/sha.h>
+#include <libtock-sync/crypto/deprecated/sha.h>
 
 #define DATA_LEN 256
 #define DEST_LEN 32

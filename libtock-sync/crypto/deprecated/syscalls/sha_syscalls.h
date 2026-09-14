@@ -1,6 +1,6 @@
 #pragma once
 
-#include <libtock/crypto/syscalls/sha_syscalls.h>
+#include <libtock/crypto/deprecated/syscalls/sha_syscalls.h>
 #include <libtock/tock.h>
 
 #ifdef __cplusplus

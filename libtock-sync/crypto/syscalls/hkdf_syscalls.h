@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-returncode_t libtocksync_hmac_yield_wait_for_done(void);
+returncode_t libtocksync_hkdf_yield_wait_for_done(void);
 
 #ifdef __cplusplus
 }

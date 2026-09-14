@@ -1,9 +1,7 @@
-#include <libtock/crypto/syscalls/sha_syscalls.h>
+#include <libtock/crypto/deprecated/syscalls/sha_syscalls.h>
 #include <libtock/defer.h>
 
 #include "sha.h"
-
-#include "syscalls/sha_syscalls.h"
 
 bool libtocksync_sha_exists(void) {
   return libtock_sha_driver_exists();

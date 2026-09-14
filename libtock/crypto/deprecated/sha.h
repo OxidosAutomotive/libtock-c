@@ -1,6 +1,6 @@
 #pragma once
 
-#include "../tock.h"
+#include "../../tock.h"
 #include "sha_types.h"
 #include "syscalls/sha_syscalls.h"
 

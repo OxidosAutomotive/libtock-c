@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-#include <libtock-sync/crypto/hmac.h>
+#include <libtock-sync/crypto/deprecated/hmac.h>
 #include <libtock/interface/console.h>
 
 #define KEY_LEN  32
@@ -25,7 +25,7 @@ int main(void) {
     return -2;
   }
 
-  ret = libtocksync_hmac_compute(LIBTOCK_SHA256,
+  ret = libtocksync_hmac_simple(LIBTOCK_HMAC_SHA256,
                                 key_buf, 11,
                                 data_buf, strlen((const char*) data_buf),
                                 dest_buf, DEST_LEN);

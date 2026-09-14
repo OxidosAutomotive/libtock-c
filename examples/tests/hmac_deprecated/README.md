@@ -1,6 +1,9 @@
 HMAC
 ====
-This test performs a HMAC operation (SHA256) on a string and prints the output
+
+DEPRECATED! Works only with the components that were not adapted to the new HIL.
+
+This test performs a HMAC operation on a string and prints the output
 
 Expected Output
 ---------------

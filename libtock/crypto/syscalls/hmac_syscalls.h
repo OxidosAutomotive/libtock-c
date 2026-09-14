@@ -10,21 +10,17 @@ extern "C" {
 
 bool libtock_hmac_driver_exists(void);
 
-returncode_t libtock_hmac_set_upcall(subscribe_upcall callback, void* opaque);
+returncode_t libtock_hmac_set_done_upcall(subscribe_upcall callback, void* opaque);
 
-returncode_t libtock_hmac_set_readonly_allow_key_buffer(const uint8_t* buffer, uint32_t len);
+returncode_t libtock_hmac_set_readonly_allow_key_buffer(uint8_t* buffer, uint32_t len);
 
-returncode_t libtock_hmac_set_readonly_allow_data_buffer(const uint8_t* buffer, uint32_t len);
+returncode_t libtock_hmac_set_readonly_allow_input_buffer(uint8_t* buffer, uint32_t len);
 
-returncode_t libtock_hmac_set_readwrite_allow_destination_buffer(uint8_t* buffer, uint32_t len);
+returncode_t libtock_hmac_set_readwrite_allow_output_buffer(uint8_t* buffer, uint32_t len);
 
-returncode_t libtock_hmac_command_set_algorithm(uint32_t hash);
+returncode_t libtock_hmac_command_start(uint8_t algo);
 
-returncode_t libtock_hmac_command_run(void);
-
-returncode_t libtock_hmac_command_update(void);
-
-returncode_t libtock_hmac_command_finish(void);
+returncode_t libtocksync_hmac_yield_wait_for_done(void);
 
 #ifdef __cplusplus
 }

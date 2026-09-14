@@ -1,12 +1,12 @@
 SHA
 ===
 
-This test performs a SHA operation on a string and prints the output
+This test performs a hash operation (SHA256) on a string and prints the output
 
 The test should look like:
 
 ````
-[TEST] SHA Example Test
+[TEST] Hash Example Test
 Loading in the data buf...
    done
 Setting up the dest buf...
