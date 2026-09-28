@@ -15,6 +15,7 @@ typedef enum {
   LIBTOCK_SHA512     = 5,
   LIBTOCK_SHA512_224 = 6,
   LIBTOCK_SHA512_256 = 7,
+  LIBTOCK_SM3        = 8,
 } libtock_hash_algorithm_t;
 
 #ifdef __cplusplus
